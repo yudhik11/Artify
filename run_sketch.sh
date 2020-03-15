@@ -1,0 +1,1 @@
+python main_gui_shadow_draw_sketchy.py --name wgangp_sparse_label_channel_pix2pix_autocomplete_multiscale_nz_256_nc_1_nf_32_gp_0 --model sparse_wgangp_pix2pix --checkpoints_dir checkpoints_sparse_sketchy --gpu_ids 0 --nz 256 --sparseSize 4 --fineSize 128 --ngf 32 --ndf 32 --num_interpolate 8  --input_nc 1 --output_nc 1 --n_classes 6
