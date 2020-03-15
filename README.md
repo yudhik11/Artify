@@ -1,9 +1,6 @@
 # Artify
 
-We propose an interactive GAN-based sketch-to-image translation method
-that helps novice users easily create images of simple objects.
-The user starts with a sparse sketch and a desired object category, and the network then recommends its plausible completion(s) and shows a corresponding synthesized image. This enables a feedback loop, where the user can edit the sketch based on the network's recommendations, while the network is able to better synthesize the image that the user might have in mind.
-In order to use a single model for a wide array of object classes, we introduce a gating-based approach for class conditioning, which allows us to generate distinct classes without feature mixing, from a single generator network.
+In the day of Instagram, we are exposed to multiple people who draw such nice and creative comics. We were inspired by them and wanted to try our hands in making comics and we started with drawing the faces of the characters. But we failed xD. So, we went through research papers and searched for something that can help us to take baby steps in this area. And like this, *Artify* was born.
 
 ## Prerequisites
 - Linux or macOS
@@ -13,7 +10,7 @@ In order to use a single model for a wide array of object classes, we introduce 
 ## Getting Started
 - Clone this repo:
 ```
-git clone https://github.com/arnabgho/Artify
+git clone https://github.com/yudhik11/Artify/
 cd Artify
 ```
 - Install PyTorch 1.0+ and dependencies from http://pytorch.org
@@ -26,11 +23,8 @@ pip install -r requirements.txt
 
 ### Face
 
-<p align="center">
-  <img  height="300" src='docs/resources/gifs/emoji.gif'>
-</p>
-- Download model weights of 'checkpoints' from google-drive [link](https://drive.google.com/open?id=125jXBRfzmNmtzP7Q2KdmTnyK64tpMAEG)
-- Download model weights of 'checkpoints_face' from google-drive [link](https://drive.google.com/open?id=1ZXBEBP2Gn5Vb_sGXbz5RKR9WnNs67spa)
+- Download model weights of `checkpoints` from google-drive [link](https://drive.google.com/open?id=125jXBRfzmNmtzP7Q2KdmTnyK64tpMAEG)
+- Download model weights of `checkpoints_face` from google-drive [link](https://drive.google.com/open?id=1ZXBEBP2Gn5Vb_sGXbz5RKR9WnNs67spa)
 
 ```
 bash scripts/prepare_face.sh
@@ -44,7 +38,7 @@ bash run_face.sh
 
 ### Sketch
 
-- Download model weights of 'checkpoints_sketch' from google-drive link [link](https://drive.google.com/open?id=1hbaTN_O3PAehBEKE4cKdkD8cHRmQJ5Gj)
+- Download model weights of `checkpoints_sketch` from google-drive link [link](https://drive.google.com/open?id=1hbaTN_O3PAehBEKE4cKdkD8cHRmQJ5Gj)
 ```
 bash scripts/prepare_sketch.sh
 ```
